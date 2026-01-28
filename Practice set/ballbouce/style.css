@@ -1,0 +1,36 @@
+.box{
+    position: relative;
+    width: 1250px;
+    height: 80vh;
+    border: 2px solid black;
+    background-color: aqua;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: red;  
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    animation: aniy .75s ease-out  infinite alternate , anix 3s linear  infinite alternate;
+    /* animation: anix 3s ease-in-out  infinite ; */
+}
+@keyframes anix {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1200px;
+    }
+}
+@keyframes aniy {
+     0%{
+        bottom: 0px;
+    }
+     100%{
+        bottom: 500px;
+     }  
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* element selectors
+        div{
+            background-color: red;
+        } */
+
+        /* class ::selection */
+        .red
+        {
+            background-color: rgb(224, 93, 93);
+        }
+        #yellow
+        {
+            background-color: rgb(143, 220, 223);
+        }
+        div p 
+        {
+            color: rgb(218, 89, 121);
+        }
+        div > p 
+        {
+            color: rgb(240, 142, 240);
+        }
+        a:active
+        {
+            background-color: green;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="red">I am a div </div>
+    <div  id="yellow">i am other div </div>
+    <div>
+        i am div befor para
+        <p>
+            i am para child of div 
+        </p>
+    </div>
+    <div>
+        <article>
+            <p>
+                i am child of aritcle and grandchild of div
+            </p>
+        </article>
+        <a href="https://google.com">go to google</a>
+
+    </div>
+</body>
+</html>

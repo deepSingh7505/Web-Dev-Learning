@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="title">freeCodeCamp Survey Form</h1>
+     <p id="description">Thank you for taking the time to help us improve the platform
+</p>
+<form id="survey-form">
+    <label id="name-label">Name</label>
+    <input type="text" required placeholder="Enter Your Name" id="name"> <br><br>
+     <label id="email-label">Email</label>
+    <input type="email" id="email" required placeholder="enter your email"><br><br>
+     <label id="number-label">Age(optional)</label>
+    <input type="number" id="number" placeholder="Age" max="0" min="100"><br><br>
+    <label for="">Which option best describes your current role?</label><br><br>
+    <select  id="dropdown">
+        <option value="" disabled selected>Select your Role</option>
+        <option value="">Student</option>
+        <option value="">Teacher</option>
+        <option value="">HOD</option>
+        <option value="">Manager</option>
+    </select><br><br>
+    <label for="">Would you recommend freeCodeCamp to a friend?</label><br><br>
+    <input type="radio" name="recommend" id="Definitely" value="Definitely">
+    <label for="Definitely" >Definitely</label>
+    <input type="radio" name="recommend" id="May be" value="May be">
+    <label for="May be">May be</label>
+    <input type="radio" name="recommend" id="Not Sure" value="Not Sure">
+    <label for="Not Sure">Not Sure</label>
+    <br>
+    <br>
+    <input type="checkbox" name="onlyone" id="f" value="FrontEnd">
+    <label for="f">Fontend</label>
+    <input type="checkbox" name="onlyone" id="b" value="BackEnd">
+    <label for="b">Backend</label>
+    <input type="checkbox" name="onlyone" id="p" value="Python">
+    <label for="p">Python</label>
+    <input type="checkbox" name="onlyone" id="j" value="Java">
+    <label for="j">Java</label>
+    <input type="checkbox" name="onlyone" id="c" value="C++">
+    <label for="c">C++</label>
+    <input type="checkbox" name="onlyone" id="k" value="Kotlin">
+    <label for="k">Kotlin</label>
+    <br><br>
+    <textarea name="" id="" placeholder="Enter Your Comments here....."></textarea><br><br>
+    <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container {
+            width: 1000px;
+            height: 500px;
+            border: 2px solid black;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: #61f589;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+                        
+
+        }
+        .box:hover {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: boxanim 4s ease-in-out infinite;
+        }
+        @keyframes boxanim {
+            0%{
+           background-color: red;
+            }
+            50%{
+                background-color: yellowgreen;
+                scale:4;
+                rotate: 360deg;
+                        }
+         100%{
+           background-color: red;
+           rotate: 720deg;
+           scale: 1;
+            }
+                    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+
+</html>

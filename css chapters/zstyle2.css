@@ -1,0 +1,48 @@
+.box {
+    width: 1250px;
+    height: 700px;
+    background-color: #493164;
+    position: relative;
+}
+
+.ball {
+    height: 50px;
+    width: 50px;
+    background-color: #e23e57;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: vertical 5s linear infinite alternate , horizontalup 1.25s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite , horizontaldown 1.25s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite ;
+}
+
+
+@keyframes vertical {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 1200px;
+    }
+}
+@keyframes horizontalup {
+     0%{
+        bottom: 0px;
+    }
+    
+    50%{
+        bottom: 200px;
+    }
+    
+}
+@keyframes horizontaldown {
+     50%{
+        bottom: 200px;
+    }
+    
+    100%{
+        bottom: 0px;
+    }
+    
+}
+

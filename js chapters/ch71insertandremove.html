@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">i am a box</div>
+        <div class="box box2">i am also a box</div>
+        <script>
+            let a=document.createElement("div")
+            a.innerHTML="i have been created using <b> script </b>"
+            a.setAttribute("class","creating")
+            document.querySelector(".box").prepend(a)
+            document.querySelector(".container").insertAdjacentHTML("beforeend","i am div inserted by a insertadjacent method ")
+            document.querySelector(".box2").innerText=document.querySelector(".box2").innerText+" and add some data by inner text"
+        </script>
+    </div>
+</body>
+</html>
