@@ -4,6 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .read{
+            background-image: linear-gradient(orange,green);
+        }
+        .to-read{
+            background-image: linear-gradient(red,blue);
+        }
+        .in-progress{
+            background-image: linear-gradient(pink,cyan);
+        }
+        span{
+            display: inline-block;
+        }
+         tr.read span.status{
+           border: 2px solid black; 
+           background-image: linear-gradient(rgb(227, 92, 92),rgb(66, 238, 66));
+        }
+         tr.to-read span.status{
+           border: 2px solid black; 
+           background-image: linear-gradient(rgb(186, 70, 183),rgb(220, 239, 41));
+        }
+         tr.in-progress span.status{
+           border: 2px solid black; 
+           background-image: linear-gradient(rgb(205, 112, 40),rgb(26, 172, 208));
+        }
+        span.status , span.rate.value{
+            height: auto;
+            width: auto;
+            padding: 2px;
+        }
+        span.class.value span{
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 2px;
+            height: auto;
+            width: auto;
+            background-color: orange;
+        }
+        span > :first-child{
+
+        }
+    </style>
 </head>
 <body>
     <h1>Book Inventory</h1>
@@ -19,22 +61,22 @@
             <td></td>
             <td></td>
             <td></td>
-            <span class="status">Read</span>
-            <td class="rate" value="3"></td>
+            <td><span class="status">Read</span></td>
+            <span class="rate value" value="3"></span>
         </tr>
-        <tr class="To Read">
+        <tr class="to-read">
              <td></td>
             <td></td>
             <td></td>
             <span class="status">To Read</span>
-            <td></td>
+            <span class="rate"></span>
         </tr>
-        <tr class="In Progress">
+        <tr class="in-progress">
              <td></td>
             <td></td>
             <td></td>
             <span class="status">In Progress</span>
-            <td></td>
+            <span class="rate"></span>
         </tr>
     </table>
 </body>
