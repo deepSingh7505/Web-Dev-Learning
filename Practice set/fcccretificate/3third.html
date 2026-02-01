@@ -5,31 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .read{
-            background-image: linear-gradient(orange,green);
+        tr[class="read"]{
+            background-image: linear-gradient(red,red);
         }
-        .to-read{
-            background-image: linear-gradient(red,blue);
+        tr[class="to-read"]{
+            background-image: linear-gradient(green,green);
         }
-        .in-progress{
-            background-image: linear-gradient(pink,cyan);
+        tr[class="in-progress"]{
+            background-image: linear-gradient(green,green);
         }
         span{
             display: inline-block;
         }
-         tr.read span.status{
+         tr[class="read"] span[class="status"]{
            border: 2px solid black; 
            background-image: linear-gradient(rgb(227, 92, 92),rgb(66, 238, 66));
         }
-         tr.to-read span.status{
+         tr[class="to-read"] span[class="status"]{
            border: 2px solid black; 
            background-image: linear-gradient(rgb(186, 70, 183),rgb(220, 239, 41));
         }
-         tr.in-progress span.status{
+         tr[class="in-progress"] span[class="status"]{
            border: 2px solid black; 
            background-image: linear-gradient(rgb(205, 112, 40),rgb(26, 172, 208));
         }
-        span.status , span.rate.value{
+        span[class="status"] , span[class^="rate"]{
             height: auto;
             width: auto;
             padding: 2px;
@@ -42,24 +42,16 @@
             width: auto;
             background-color: orange;
         }
-        span[class*="one"] :first-child{
+        span[class~="one"] :first-child{
             background-image: linear-gradient(red ,rgb(28, 167, 232));
         }
-        span[class*="two"] :nth-child(-n+2){
+        span[class~="two"] :nth-child(-n+2){
             background-image: linear-gradient(rgb(28, 211, 46) ,rgb(232, 30, 208));
         }
-        span[class*="three"] :nth-child(-n+3){
+        span[class~="three"] span{
             background-image: linear-gradient(rgb(62, 14, 81),orange);
         }
-        tr.class{
-            background-image: linear-gradient(red,red);
-        }
-        tr.to-read{
-            background-image: linear-gradient(green,green);
-        }
-        tr.in-progress{
-            background-image: linear-gradient(green,green);
-        }
+        
     </style>
 </head>
 <body>
