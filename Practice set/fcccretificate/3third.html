@@ -34,7 +34,7 @@
             width: auto;
             padding: 2px;
         }
-        span.class.value span{
+        span[class^="rate"] > span{
             border: 2px solid black;
             border-radius: 5px;
             margin: 2px;
@@ -42,41 +42,58 @@
             width: auto;
             background-color: orange;
         }
-        span > :first-child{
-
+        span[class*="one"] :first-child{
+            background-image: linear-gradient(red ,rgb(28, 167, 232));
+        }
+        span[class*="two"] :nth-child(-n+2){
+            background-image: linear-gradient(rgb(28, 211, 46) ,rgb(232, 30, 208));
+        }
+        span[class*="three"] :nth-child(-n+3){
+            background-image: linear-gradient(rgb(62, 14, 81),orange);
+        }
+        tr.class{
+            background-image: linear-gradient(red,red);
+        }
+        tr.to-read{
+            background-image: linear-gradient(green,green);
+        }
+        tr.in-progress{
+            background-image: linear-gradient(green,green);
         }
     </style>
 </head>
 <body>
     <h1>Book Inventory</h1>
     <table>
-        <th>
-            <td>Title</td>
-            <td>Author</td>
-            <td>Category</td>
-            <td>Status</td>
-            <td>Rate</td>
-        </th>
-        <tr class="Read">
-            <td></td>
-            <td></td>
-            <td></td>
+        <thead>
+            <tr>
+            <th>Title</hth>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th>Rate</th>
+            </tr>
+        </thead>
+        <tr class="read">
+            <td>Maze Runnner</td>
+            <td>Maze 1</td>
+            <td>MAze 2</td>
             <td><span class="status">Read</span></td>
-            <span class="rate value" value="3"></span>
+            <td><span class="rate one"><span></span><span></span><span></span></span></td>
         </tr>
         <tr class="to-read">
-             <td></td>
-            <td></td>
-            <td></td>
-            <span class="status">To Read</span>
-            <span class="rate"></span>
+             <td>MAze 2 </td>
+            <td>Deep</td>
+            <td>Singh</td>
+            <td><span class="status">To Read</span></td>
+            <td><span class="rate"><span></span><span></span><span></span></span></td>
         </tr>
         <tr class="in-progress">
-             <td></td>
-            <td></td>
-            <td></td>
-            <span class="status">In Progress</span>
-            <span class="rate"></span>
+             <td>Hello</td>
+            <td>Peak</td>
+            <td>Panthers</td>
+            <td><span class="status">In Progress</span></td>
+            <td><span class="rate"><span></span><span></span><span></span></span></td>
         </tr>
     </table>
 </body>
