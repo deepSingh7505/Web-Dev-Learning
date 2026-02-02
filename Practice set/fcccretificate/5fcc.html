@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 1000;
+        }
+
+        .nav-link {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            gap: 5px;
+            text-decoration: none;
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #header-img {
+            border: 2px solid black;
+            width: 20%;
+            
+        }
+
+        @media (max-width: 768px) {
+            #header-img {
+                width: 10%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <a href="#intro" class="nav-link">Introdution</a>
+            <a href="#explain" class="nav-link">Explaination</a>
+            <a href="#conc" class="nav-link">conclusion</a>
+        </nav>
+        <img src="https://global.honda/en/F1/machine/2024_RedBullRB20/img/main.jpg" alt="" id="header-img">
+    </header>
+    <main>
+        <video src="" id="video"></video>
+        <form action="https://www.freecodecamp.org/email-submit" id="form">
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <div id="intro">
+            <h1>Introdution</h1>
+            <p>Red Bull Racing is one of the most successful and high-profile teams in modern Formula 1 history. For the
+                2026 F1 season, the team — officially called Oracle Red Bull Racing — has entered a new era marked by
+                technical regulation changes, a fresh driver lineup, and a major shift in their powertrain strategy as
+                F1 introduces completely restructured engines and aerodynamic rules.</p>
+        </div>
+        <div id="explain">
+            <h1>Explaination</h1>
+            <p>
+            <h3>🏁 New Team Dynamics</h3>
+
+            In 2026, Red Bull Racing keeps Max Verstappen, the four-time world champion, as their lead driver.
+
+            Joining him is Isack Hadjar, promoted from their junior sister squad, Racing Bulls, replacing Yuki
+            Tsunoda as full-time teammate.
+
+            Tsunoda remains with the team in a test and reserve driver role, supporting development efforts.
+
+            <h3>⚙️ Technical Shifts</h3>
+
+            2026 sees huge changes in F1 regulations, especially the power unit. New engines have much more
+            electrical power and are designed for a roughly 50/50 split between combustion and hybrid systems.
+
+            Red Bull and sister team Racing Bulls have transitioned to using Red Bull Ford power units, marking
+            Ford’s return to Formula 1 as an engine partner.
+
+            <h3>💡 Season Preparations</h3>
+
+            Red Bull unveiled its 2026 car and livery (design and visual look) in Detroit, USA, showing a refreshed
+            branding with a white heritage theme and the iconic Red Bull logo.
+
+            The team has begun pre-season testing at the Circuit de Barcelona-Catalunya in Spain, a key step to
+            fine-tune the new car under real track conditions.</p>
+        </div>
+        <div id="conc">
+            <h1>Conclusion</h1>
+            <p>For the 2026 Formula 1 season, Red Bull Racing steps into a bold new chapter. With updated technical
+                rules, a stronger focus on hybrid power, and a fresh driver pairing of Verstappen with rising star
+                Hadjar, the team is striving to regain its championship-winning form. While the sport evolves
+                technically and competitively, Red Bull remains a benchmark for performance and innovation in F1.</p>
+        </div>
+    </main>
+</body>
+
+</html>
